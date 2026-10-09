@@ -18,7 +18,7 @@
   - `running` 标志保证同一时间只有一个排队中的执行；
   - `125 - (Date.now() - lastTime)` 算距上次执行的剩余窗口，不足 6ms 就抬到 6ms；
   - 到点后先 `rAF`，rAF 回调里再 `setTimeout` 才真正 run——rAF 对齐下一帧（保证布局之后、绘制之前），setTimeout 再推后一个任务队列，躲开帧内拥挤；
-- 130-182 行：**整段注释掉的 rIC 版 throttle**（requestIdleCallback 空闲回调版，参数更细：66ms 窗口、优先调用阈值 22ms、可传 isPriority 提级）。2015 年 rIC 只有 Chrome 有，作者写好了等普及——这段注释在 4.x 转正，是本案例集跨系列对照的一条暗线。
+- 130-182 行：**整段注释掉的 rIC 版 throttle**（requestIdleCallback 空闲回调版，参数更细：66ms 窗口、优先调用阈值 22ms、可传 isPriority 提级）。2015 年 rIC 只有 Chrome 有，作者写好了等普及——这段注释在上游 2.0.0 转正（mature 案例第一版的 diff 里能看到它从注释变成正文），是本案例集跨案例对照的一条暗线。
 
 ## 三、loader 主体（184-574 行，最核心）
 

@@ -16,5 +16,5 @@
 
 ## 值得注意的工程细节
 
-- 页面加载了 `plugins/unveilhooks/ls.unveilhooks.min.js`（148 行）——插件把懒加载扩展到 script、背景图、视频，这是插件生态的入口，v4 系列展开；
+- 页面加载了 `plugins/unveilhooks/ls.unveilhooks.min.js`（148 行）——插件把懒加载扩展到 script、背景图、视频，这是插件生态的入口，mature 案例展开；
 - 老浏览器分支（9-16 行）：不支持 picture 元素时动态补 polyfill 脚本——那个时代「用新标准」等于「自己带补丁」。
