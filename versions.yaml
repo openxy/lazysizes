@@ -1,0 +1,20 @@
+# 前端教学案例集 · 版本清单（结构元信息唯一事实源；正文 {slug}/doc.md、代码 {slug}/）
+
+- slug: v1-polling/scroll-polling
+  title: scroll 事件轮询懒加载
+  summary: 上游 1.5.0：scroll/resize 事件加节流，轮询检查视口内图片——懒加载的经典实现形态
+  seq: 1
+  from: github:aFarkas/lazysizes@1.5.0
+  entry: index.html
+  runtime: static
+  edit_run: true
+
+- slug: v4-observer/intersection-observer
+  title: IntersectionObserver 原生观察
+  summary: 上游 4.1.0：浏览器原生 IntersectionObserver 取代 scroll 事件轮询——技术被平台能力取代的演进样本
+  seq: 1
+  from: github:aFarkas/lazysizes@4.1.0
+  entry: index.html
+  runtime: static
+  edit_run: true
+
