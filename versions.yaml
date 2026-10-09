@@ -9,11 +9,20 @@
   runtime: static
   edit_run: true
 
-- slug: v4-observer/intersection-observer
-  title: IntersectionObserver 原生观察
-  summary: 上游 4.1.0：浏览器原生 IntersectionObserver 取代 scroll 事件轮询——技术被平台能力取代的演进样本
+- slug: v4-mature/scheduling
+  title: 成熟期核心：调度机制全家桶
+  summary: 上游 4.1.0：requestIdleCallback/rAF 批处理/防抖转正，插件生态成型；IntersectionObserver 版只留 src/ 实验变体，从未转正主产物
   seq: 1
   from: github:aFarkas/lazysizes@4.1.0
+  entry: index.html
+  runtime: static
+  edit_run: true
+
+- slug: v5-native/native-loading
+  title: 平台收编：原生 loading=lazy
+  summary: 上游 5.3.1（末版）：原生 loading="lazy" 把懒加载收进平台，native-loading 插件即过渡形态——库的终局样本
+  seq: 1
+  from: github:aFarkas/lazysizes@5.3.1
   entry: index.html
   runtime: static
   edit_run: true
