@@ -1,0 +1,22 @@
+# 教学视图裁剪（.eduignore）：只影响文件树与差异面板的显示，运行与快照仍是全量代码
+#（入口 index.html 引用的 min 产物仍在运行树里）。后规则覆盖前规则。
+# 本案例保留 plugins/unveilhooks/：演示页加载的插件，umd-split 版 doc/index.html.md 讲插件生态入口。
+*.min.js
+*.map
+package-lock.json
+package.json
+.github/
+CHANGELOG.md
+README.md
+Gruntfile.js
+tests/
+src/
+plugins/
+!plugins/unveilhooks/
+# 上游仓库治理文件与演示页变体（第二轮补：构建 diff 实测残余）
+.gitignore
+component.json
+BingSiteAuth.xml
+no-src.html
+rias/
+assets/imgs/loader.gif

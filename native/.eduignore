@@ -1,0 +1,24 @@
+# 教学视图裁剪（.eduignore）：只影响文件树与差异面板的显示，运行与快照仍是全量代码
+#（入口 index.html 引用的 lazysizes.min.js 仍在运行树里）。
+# 本案例保留 plugins/native-loading/：让位协议是核心概念（doc/ 精读 ls.native-loading.js）；
+# 不忽略 *.d.ts 与 types/——final 版的类型注解收官是概念文件。
+*.min.js
+*.map
+package-lock.json
+package.json
+.github/
+CHANGELOG.md
+README.md
+Gruntfile.js
+tests/
+plugins/
+!plugins/native-loading/
+# 上游仓库治理文件与演示页变体（第二轮补：构建 diff 实测残余）
+.gitignore
+component.json
+BingSiteAuth.xml
+no-src.html
+rias/
+assets/imgs/loader.gif
+# native-loading 目录随 ! 反选救回，但其 min 仍是构建产物，最后再压掉
+plugins/native-loading/ls.native-loading.min.js

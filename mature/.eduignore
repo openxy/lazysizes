@@ -1,0 +1,20 @@
+# 教学视图裁剪（.eduignore）：只影响文件树与差异面板的显示，运行与快照仍是全量代码。
+# 本案例保留 src/：lazysizes-intersection.js 是 refined 版精读对象（从未转正的 IntersectionObserver 完整重写）；
+# 插件目录整体裁掉——二十多个插件的同名头部改造是同一模式机械铺开，样本看 polling 的 unveilhooks 与 native 的 native-loading。
+*.min.js
+*.map
+package-lock.json
+package.json
+.github/
+CHANGELOG.md
+README.md
+Gruntfile.js
+tests/
+plugins/
+# 上游仓库治理文件与演示页变体（第二轮补：构建 diff 实测残余）
+.gitignore
+component.json
+BingSiteAuth.xml
+no-src.html
+rias/
+assets/imgs/loader.gif

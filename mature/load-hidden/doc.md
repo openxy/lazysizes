@@ -16,7 +16,7 @@
 - checkElements 主循环加 loadHidden 判断（`lazysizes.js:394`）；
 - 爬虫正则扩为 `/(gle|ing)bot/`（Googlebot 加 Bingbot：爬虫没视口，全部直接揭幕喂给它——SEO 饭碗）；
 - 配置表新增 loadHidden/ricTimeout/throttleDelay；expFactor 1.7→1.5、expand 档位简化为两档；
-- `plugins/` 目录从几个长到二十几个（bgset、rias、object-fit、artdirection、blur-up……）——差异面板里成片的新增文件就是生态本身，浏览目录比逐个读文件有用。
+- `plugins/` 目录从几个长到二十几个（bgset、rias、object-fit、artdirection、blur-up……）。这步上游差异原有 65 文件，成片的新增就是生态本身；浏览视图已按 `.eduignore` 裁掉插件目录（同一挂载模式机械铺开），插件头部 CommonJS/AMD 三分支的完整样本在 native 案例保留的 native-loading 插件里。
 
 ## 思考题
 
